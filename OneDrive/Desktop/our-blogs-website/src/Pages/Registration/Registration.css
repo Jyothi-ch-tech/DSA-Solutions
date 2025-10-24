@@ -1,0 +1,67 @@
+/* Page container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 2rem;
+}
+
+/* Form styling */
+.login-form {
+  background-color: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form heading */
+.login-form h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+/* Floating inputs adjustments */
+.login-form .form-floating input {
+  height: 50px;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.login-form .form-floating label {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* Submit button */
+.login-form .btn {
+  margin-top: 1.5rem;
+  padding: 0.65rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.login-form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-form h1 {
+    font-size: 1.6rem;
+  }
+}

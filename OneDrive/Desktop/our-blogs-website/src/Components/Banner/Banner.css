@@ -1,0 +1,77 @@
+.banner-div {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Background image */
+.banner-div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%) contrast(105%);
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.banner-div:hover img {
+  transform: scale(1.05);
+  filter: brightness(75%);
+}
+
+/* Text overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+/* Banner title */
+#banner-title {
+  color: #ffffff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 80%;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1.2s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .banner-div {
+    height: 60vh;
+  }
+
+  #banner-title {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}

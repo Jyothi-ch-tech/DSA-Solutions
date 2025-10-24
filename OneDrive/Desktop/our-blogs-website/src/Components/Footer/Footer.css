@@ -1,0 +1,37 @@
+.footer-div {
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 3rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Name styling */
+.footer-div h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* Subtle hover glow effect */
+.footer-div:hover {
+  background-color: #eef2ff;
+}
+
+/* Optional smaller text (for copyright) */
+.footer-div p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .footer-div h1 {
+    font-size: 1.1rem;
+  }
+}

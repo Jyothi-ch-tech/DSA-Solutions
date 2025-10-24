@@ -1,0 +1,87 @@
+/* Main navbar container */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Brand / Logo */
+.navbar-brand {
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+/* Navigation links */
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-nav .nav-item a {
+  color: #333;
+  font-size: 1.05rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+/* Button-style hover for active pages */
+.navbar-nav .nav-item a.active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Toggler (for mobile view) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(30%);
+}
+
+/* Responsive view */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .navbar-nav .nav-item a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #333;
+  }
+
+  .navbar-nav .nav-item a:hover {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,60 @@
+/* Section container */
+.trending-blogs-section {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Category title */
+.trending-blogs-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/* Underline accent for title */
+.trending-blogs-section h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Blog cards container */
+.all-trending-blogs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* Fix spacing for cards */
+.all-trending-blogs .card {
+  width: 18rem !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trending-blogs-section {
+    padding: 3rem 1rem;
+  }
+
+  .trending-blogs-section h1 {
+    font-size: 2rem;
+  }
+
+  .all-trending-blogs {
+    gap: 1.2rem;
+  }
+}
